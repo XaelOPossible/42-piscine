@@ -6,7 +6,7 @@
 /*   By: axemicha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 14:25:22 by axemicha          #+#    #+#             */
-/*   Updated: 2024/07/29 18:29:27 by axemicha         ###   ########.fr       */
+/*   Updated: 2024/07/30 18:32:50 by axemicha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ char	*ft_strdup(char *src)
 	return(dest);
 }
 
-int	main()
+/* int	main()
 {
 	char str[] = "Hello , world";
 
 	printf("%s\n", ft_strdup(str));
-}
+} */
