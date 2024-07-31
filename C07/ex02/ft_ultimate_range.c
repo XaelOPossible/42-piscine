@@ -6,7 +6,7 @@
 /*   By: axemicha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 19:23:15 by axemicha          #+#    #+#             */
-/*   Updated: 2024/07/31 14:50:23 by axemicha         ###   ########.fr       */
+/*   Updated: 2024/07/31 15:07:50 by axemicha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,21 @@ int	ft_ultimate_range(int **range,int min, int max)
 
 int main()
 {
-	int **range;
+	int *range;
+	int size;
+	int i;
 
-	printf("%d", ft_ultimate_range(range, 0, 10));
+	i = 0;
+	size = ft_ultimate_range(&range, -10 , 10);
+	printf("Size: %d\n", size);
+	if (range)
+	{
+		while (i < size)
+		{
+			printf("%d ", range[i]);
+			i++;
+		}
+		printf("\n");
+	}
 	return (0);
 }
