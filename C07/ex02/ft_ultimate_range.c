@@ -6,7 +6,7 @@
 /*   By: axemicha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 19:23:15 by axemicha          #+#    #+#             */
-/*   Updated: 2024/07/31 15:07:50 by axemicha         ###   ########.fr       */
+/*   Updated: 2024/07/31 18:14:26 by axemicha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int	*ft_range(int min, int max)
 {
-	int i;
+	int	i;
 	int	*tabint;
-	
+
 	i = 0;
 	if (min >= max)
 		return (NULL);
 	tabint = malloc(sizeof(int) * (max - min));
 	if (!tabint)
-		return(NULL);
+		return (NULL);
 	while (min + i < max)
 	{
 		tabint[i] = min + i;
@@ -31,14 +31,14 @@ int	*ft_range(int min, int max)
 	return (tabint);
 }
 
-int	ft_ultimate_range(int **range,int min, int max)
+int	ft_ultimate_range(int **range, int min, int max)
 {
-	int size;
+	int	size;
 
 	if (min >= max)
 	{
 		*range = NULL;
-		return(0);
+		return (0);
 	}
 	*range = ft_range(min, max);
 	if (!range)
@@ -46,7 +46,7 @@ int	ft_ultimate_range(int **range,int min, int max)
 	size = max - min;
 	return (size);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -67,4 +67,4 @@ int main()
 		printf("\n");
 	}
 	return (0);
-}
+}*/
