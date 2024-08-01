@@ -6,7 +6,7 @@
 /*   By: axemicha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 15:16:12 by axemicha          #+#    #+#             */
-/*   Updated: 2024/07/31 21:23:22 by axemicha         ###   ########.fr       */
+/*   Updated: 2024/08/01 22:49:00 by axemicha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	char	*str;
 
 	i = 0;
+	strfull = 0;
 	if (size == 0)
 	{
 		str = malloc(sizeof(char));
@@ -73,14 +74,13 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	}
 	return (str);
 }
-/*
 int	main(int ac, char **av)
 {
 	char *sp;
 	char *x;
 
-	sp = " ";
+	sp = "_";
 	x = ft_strjoin(ac, av, sp);
 	printf("%s", x);
-}*/
+}
 
